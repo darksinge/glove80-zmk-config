@@ -20,6 +20,8 @@
 #include <dt-bindings/zmk/rgb.h>
 
 /* Automatically generated layer name #define */
+#define HYPER(keycode) LS(LC(LA(LG(keycode))))
+#define MEH(keycode) LS(LC(LA(keycode)))
 
 #define LAYER_Base 0
 #define LAYER_Lower 1
@@ -271,9 +273,9 @@
             bindings = <
 &to 0  &none  &none  &none  &none                                                          &none  &none  &none  &none  &none
 &none  &none  &none  &none  &none  &none                                            &none  &none  &none  &none  &none  &none
-&none  &kp Q  &kp W  &kp E  &kp R  &kp T                                            &kp Y  &kp U  &kp I  &kp O  &kp P  &none
-&none  &kp A  &kp S  &kp D  &kp F  &kp G                                            &kp H  &kp J  &kp K  &kp L  &none  &none
-&none  &kp Z  &kp X  &kp C  &kp V  &kp B  &none  &none  &none  &none  &none  &none  &kp N  &kp M  &none  &none  &none  &none
+&none  &kp LG(LS(LC(LA(Q))))  &kp LG(LS(LC(LA(W))))  &kp LG(LS(LC(LA(E))))  &kp LG(LS(LC(LA(R))))  &kp LG(LS(LC(LA(T))))                                            &kp LG(LS(LC(LA(Y))))  &kp LG(LS(LC(LA(U))))  &kp LG(LS(LC(LA(I))))  &kp LG(LS(LC(LA(O))))  &kp LG(LS(LC(LA(P))))  &none
+&none  &kp LG(LS(LC(LA(A))))  &kp LG(LS(LC(LA(S))))  &kp LG(LS(LC(LA(D))))  &kp LG(LS(LC(LA(F))))  &kp LG(LS(LC(LA(G))))                                            &kp LG(LS(LC(LA(H))))  &kp LG(LS(LC(LA(J))))  &kp LG(LS(LC(LA(K))))  &kp LG(LS(LC(LA(L))))  &none  &none
+&none  &kp LG(LS(LC(LA(Z))))  &kp LG(LS(LC(LA(X))))  &kp LG(LS(LC(LA(C))))  &kp LG(LS(LC(LA(V))))  &kp LG(LS(LC(LA(B))))  &none  &none  &none  &none  &none  &none  &kp LG(LS(LC(LA(N))))  &kp LG(LS(LC(LA(M))))  &none  &none  &none  &none
 &none  &none  &none  &none  &none         &none  &none  &none  &none  &none  &none         &none  &none  &none  &none  &none
             >;
         };
