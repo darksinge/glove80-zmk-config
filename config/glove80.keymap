@@ -28,14 +28,7 @@
 #define LAYER_Magic 4
 #define LAYER_Apps 5
 
-/* To deal with the situation where there is no Lower layer, to keep &lower happy */
-
-#ifndef LAYER_Lower
-
-#define LAYER_Lower 0
-
-#endif {
-    /
+/ {
 
     /* Glove80 system behavior & macros */
 
