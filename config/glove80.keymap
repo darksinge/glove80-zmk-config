@@ -34,9 +34,7 @@
 
 #define LAYER_Lower 0
 
-#
-
-endif {
+#endif {
     /
 
     /* Glove80 system behavior & macros */
