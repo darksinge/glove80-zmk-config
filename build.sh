@@ -27,17 +27,16 @@ gum style \
 	"Please put your Glove80 into bootloader mode"
 
 gum spin \
-  --spinner dot --title.foreground "$FG" \
+  --spinner points --title.foreground "$FG" \
   --title "Searching for Glove80 keyboard..." \
   -- bash -c "source ./scripts/functions.sh && wait_for_mount ${VOLUME}"
 
 gum spin \
   --spinner line --title.foreground "$FG" \
   --title "Copying firmware..." \
-  -- cp "firmware/$FILE" "/Volumes/$VOLUME/"
+  -- cp "firmware/$FILE" "/Volumes/$VOLUME/" > /dev/null || true
 
 osascript -e 'display notification "Glove80 keyboard flashing successful" with title "Glove80 Firmware Build Script" subtitle "Keyboard flashing complete."'
 
-sleep 10
-./scripts/close_notification.sh > /dev/null
+(sleep 5 && clear_disk_not_ejected_notifications > /dev/null || true) & disown
 
