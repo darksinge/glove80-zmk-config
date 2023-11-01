@@ -36,7 +36,10 @@ gum spin \
   --title "Copying firmware..." \
   -- cp "firmware/$FILE" "/Volumes/$VOLUME/"
 
-osascript -e 'display notification "Glove80 keyboard flashing successful" with title "Glove80 Firmware Build Script" with subtitle "Keyboard flashing complete."'
+osascript -e 'display notification "Glove80 keyboard flashing successful" with title "Glove80 Firmware Build Script" subtitle "Keyboard flashing complete."'
 
-./scripts/close_notification.sh > /dev/null
+for i in {0..4}; do
+  sleep 1
+  ./scripts/close_notification.sh > /dev/null
+done
 

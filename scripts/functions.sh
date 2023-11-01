@@ -19,6 +19,16 @@ function wait_for_mount() {
     if df | grep -q "/Volumes/$VOLUME"; then
       break
     fi
-    sleep 0.5
+    sleep 0.1
+  done
+}
+
+# this doesn't work yet....
+function wait_for_dismiss_notification () {
+  for i in {0..20}; do
+    ./scripts/close_notification.sh > /dev/null
+    if [ $? -eq 0 ]; then
+      break
+    fi
   done
 }
