@@ -1,3 +1,5 @@
 *~
 .DS_Store
 firmware
+*.uf2
+combined
