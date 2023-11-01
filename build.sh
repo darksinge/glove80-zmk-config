@@ -16,10 +16,10 @@ gum spin \
   --title "Building firmware..." \
   -- bash -c "source ./scripts/functions.sh && build_firmware $FILE"
 
-gum confirm --prompt.background "$BG" --prompt.foreground "$FG" \
-  --selected.background "$FG" \
-  --selected.foreground "$BG" \
-  "Would you like to flash the firmware now?" && true || exit 0
+# gum confirm --prompt.background "$BG" --prompt.foreground "$FG" \
+#   --selected.background "$FG" \
+#   --selected.foreground "$BG" \
+#   "Would you like to flash the firmware now?" && true || exit 0
 
 gum style \
 	--foreground "212" --border-foreground 6 --border double \
@@ -38,8 +38,6 @@ gum spin \
 
 osascript -e 'display notification "Glove80 keyboard flashing successful" with title "Glove80 Firmware Build Script" subtitle "Keyboard flashing complete."'
 
-for i in {0..4}; do
-  sleep 1
-  ./scripts/close_notification.sh > /dev/null
-done
+sleep 10
+./scripts/close_notification.sh > /dev/null
 
