@@ -10,9 +10,10 @@ TS=$(date -u +"%Y%m%d%H%M%S")
 FILE="$TS-glove80.uf2"
 VOLUME="GLV80LHBOOT"
 
+clear;
 gum spin \
   --spinner minidot --title.foreground "$FG" \
-  --title "Building firmware..." --show-output \
+  --title "Building firmware..." \
   -- bash -c "source ./scripts/functions.sh && build_firmware $FILE"
 
 gum confirm --prompt.background "$BG" --prompt.foreground "$FG" \
@@ -31,7 +32,11 @@ gum spin \
   -- bash -c "source ./scripts/functions.sh && wait_for_mount ${VOLUME}"
 
 gum spin \
-  --spinner dot --title.foreground "$FG" \
+  --spinner line --title.foreground "$FG" \
   --title "Copying firmware..." \
   -- cp "firmware/$FILE" "/Volumes/$VOLUME/"
+
+osascript -e 'display notification "Glove80 keyboard flashing successful" with title "Glove80 Firmware Build Script" with subtitle "Keyboard flashing complete."'
+
+./scripts/close_notification.sh > /dev/null
 
