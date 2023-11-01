@@ -244,7 +244,7 @@
         layer_Base {
             bindings = <
 &kp LC(UP)                &kp C_BRI_DN  &kp C_BRI_UP     &kp LG(SPACE)  &kp F5                                                                                                    &kp F6    &kp C_PREV  &kp C_PP         &kp C_NEXT            &sl 5
-&kp EQUAL                 &kp N1        &kp N2           &kp N3         &kp N4    &kp N5                                                                                  &kp N6  &kp N7    &kp N8      &kp N9           &kp N0                &kp LG(LC(Q))
+&kp EQUAL                 &kp N1        &kp N2           &kp N3         &kp N4    &kp N5                                                                                  &kp N6  &kp N7    &kp N8      &kp N9           &kp N0                &kp EQUAL
 &kp LS(LC(LG(LEFT_ALT)))  &kp Q         &kp W            &kp E          &kp R     &kp T                                                                                   &kp Y   &kp U     &kp I       &kp O            &kp P                 &kp BSLH
 &kp MINUS                 &gqt LCTRL A  &gqt LEFT_ALT S  &gqt LGUI D    &kp F     &kp G                                                                                   &kp H   &kp J     &kp K       &gqt LEFT_ALT L  &gqt LCTRL SEMICOLON  &kp SQT
 &kp DEL                   &kp Z         &kp X            &kp C          &kp V     &kp B   &kp TAB         &lower  &magic 4 0  &kp CAPS   &caps_word     &kp LS(LEFT_ALT)  &kp N   &kp M     &kp COMMA   &kp DOT          &kp FSLH              &kp PG_UP
@@ -254,12 +254,12 @@
 
         layer_Lower {
             bindings = <
-&to 0                 &kp F2     &kp F3          &kp F4          &kp F5                                                                                                 &kp F6      &kp F7        &kp F8        &kp F9           &kp F10
-&kp F1                &none      &none           &none           &none            &kp HOME                                                       &kp LEFT_PARENTHESIS   &kp KP_NUM  &kp KP_EQUAL  &kp KP_SLASH  &kp KP_MULTIPLY  &kp F11
-&trans                &none      &none           &kp UP_ARROW    &none            &kp END                                                        &kp RIGHT_PARENTHESIS  &kp KP_N7   &kp KP_N8     &kp KP_N9     &kp KP_MINUS     &kp F12
-&trans                &none      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PG_UP                                                      &kp PERCENT            &kp KP_N4   &kp KP_N5     &kp KP_N6     &kp KP_PLUS      &none
-&trans                &kp K_APP  &none           &kp F11         &kp F12          &kp PG_DN  &trans  &trans  &trans  &to 2   &trans  &caps_word  &kp COMMA              &kp KP_N1   &kp KP_N2     &kp KP_N3     &kp KP_ENTER     &trans
-&magic LAYER_Magic 0  &kp CAPS   &kp INS         &kp F11         &kp F12                     &trans  &trans  &trans  &trans  &trans  &trans                             &kp KP_N0   &kp KP_N0     &kp KP_DOT    &kp KP_ENTER     &trans
+&to 0                 &kp F2     &kp F3          &kp F4          &kp F5                                                                                                        &kp F6      &kp F7        &kp F8        &kp F9           &kp F10
+&kp F1                &none      &none           &none           &none            &kp HOME                                                              &kp LEFT_PARENTHESIS   &kp KP_NUM  &kp KP_EQUAL  &kp KP_SLASH  &kp KP_MULTIPLY  &kp F11
+&trans                &none      &none           &kp UP_ARROW    &none            &kp END                                                               &kp RIGHT_PARENTHESIS  &kp KP_N7   &kp KP_N8     &kp KP_N9     &kp KP_MINUS     &kp F12
+&trans                &none      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PG_UP                                                             &kp PERCENT            &kp KP_N4   &kp KP_N5     &kp KP_N6     &kp KP_PLUS      &none
+&trans                &kp K_APP  &none           &kp F11         &kp F12          &kp PG_DN  &kp LG(LC(Q))  &trans  &trans  &to 2   &trans  &caps_word  &kp COMMA              &kp KP_N1   &kp KP_N2     &kp KP_N3     &kp KP_ENTER     &trans
+&magic LAYER_Magic 0  &kp CAPS   &kp INS         &kp F11         &kp F12                     &trans         &trans  &trans  &trans  &trans  &trans                             &kp KP_N0   &kp KP_N0     &kp KP_DOT    &kp KP_ENTER     &trans
             >;
         };
 
@@ -281,7 +281,7 @@
 &trans  &macro_tmux_vim  &kp LS(N2)  &kp LBRC  &kp RBRC  &macro_vimsbb                                                                    &kp LS(MINUS)  &kp GRAVE         &kp LS(N8)     &kp LS(N1)    &kp LS(EQUAL)  &kp F12
 &trans  &kp LS(N3)       &kp LS(N4)  &kp LPAR  &kp RPAR  &kp TAB                                                                          &kp MINUS      &kp EQUAL         &kp LS(DOT)    &kp LS(BSLH)  &kp LS(GRAVE)  &kp FSLH
 &trans  &kp LS(N5)       &kp LS(N6)  &kp LBKT  &kp RBKT  &kp PLUS       &trans  &trans  &trans  &kp CAPSLOCK  &caps_word  &kp LEFT_SHIFT  &kp LS(N7)     &macro_codeblock  &kp LS(COMMA)  &kp LS(DOT)   &kp FSLH       &kp LG(LA(RIGHT))
-&none   &kp LCTRL        &kp HOME    &kp END   &kp LGUI                 &trans  &trans  &trans  &trans        &trans      &kp ESC                        &kp C_MUTE        &kp C_VOL_DN   &kp C_VOL_UP  &kp C_PP       &kp LG(LA(LEFT))
+&none   &kp LCTRL        &kp HOME    &kp END   &kp LGUI                 &trans  &trans  &trans  &trans        &kp ESC     &kp ESC                        &kp C_MUTE        &kp C_VOL_DN   &kp C_VOL_UP  &kp C_PP       &kp LG(LA(LEFT))
             >;
         };
 
