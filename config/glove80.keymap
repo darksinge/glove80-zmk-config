@@ -243,12 +243,12 @@
 
         layer_Base {
             bindings = <
-&kp LC(UP)                &kp C_BRI_DN  &kp C_BRI_UP     &kp LG(SPACE)  &kp F5                                                                                                 &kp F6    &kp C_PREV  &kp C_PP         &kp C_NEXT            &sl 5
-&kp EQUAL                 &kp N1        &kp N2           &kp N3         &kp N4    &kp N5                                                                               &kp N6  &kp N7    &kp N8      &kp N9           &kp N0                &kp EQUAL
-&kp LS(LC(LG(LEFT_ALT)))  &kp Q         &kp W            &kp E          &kp R     &kp T                                                                                &kp Y   &kp U     &kp I       &kp O            &kp P                 &kp BSLH
-&kp MINUS                 &gqt LCTRL A  &gqt LEFT_ALT S  &gqt LGUI D    &kp F     &kp G                                                                                &kp H   &kp J     &kp K       &gqt LEFT_ALT L  &gqt LCTRL SEMICOLON  &kp SQT
-&kp DEL                   &kp Z         &kp X            &kp C          &kp V     &kp B   &kp ENTER       &lower  &magic 4 0  &kp CAPS   &caps_word  &kp LS(LEFT_ALT)  &kp N   &kp M     &kp COMMA   &kp DOT          &kp FSLH              &kp PG_UP
-&kp LCTRL                 &kp LEFT_ALT  &kp HOME         &kp END        &kp LGUI          &kp LEFT_SHIFT  &mo 3   &kp ENTER   &kp ENTER  &kp SPACE   &kp BACKSPACE             &kp LEFT  &kp DOWN    &kp UP           &kp RIGHT             &kp PG_DN
+&kp LC(UP)                &kp C_BRI_DN  &kp C_BRI_UP     &kp LG(SPACE)  &kp F5                                                                                                &kp F6    &kp C_PREV  &kp C_PP         &kp C_NEXT            &sl 5
+&kp EQUAL                 &kp N1        &kp N2           &kp N3         &kp N4    &kp N5                                                                              &kp N6  &kp N7    &kp N8      &kp N9           &kp N0                &kp EQUAL
+&kp LS(LC(LG(LEFT_ALT)))  &kp Q         &kp W            &kp E          &kp R     &kp T                                                                               &kp Y   &kp U     &kp I       &kp O            &kp P                 &kp BSLH
+&kp MINUS                 &gqt LCTRL A  &gqt LEFT_ALT S  &gqt LGUI D    &kp F     &kp G                                                                               &kp H   &kp J     &kp K       &gqt LEFT_ALT L  &gqt LCTRL SEMICOLON  &kp SQT
+&kp DEL                   &kp Z         &kp X            &kp C          &kp V     &kp B   &kp ENTER       &lower  &magic 4 0  &kp CAPS  &caps_word  &kp LS(LEFT_ALT)  &kp N   &kp M     &kp COMMA   &kp DOT          &kp FSLH              &kp PG_UP
+&kp LCTRL                 &kp LEFT_ALT  &kp HOME         &kp END        &kp LGUI          &kp LEFT_SHIFT  &mo 3   &kp ENTER   &kp ESC   &kp SPACE   &kp BACKSPACE             &kp LEFT  &kp DOWN    &kp UP           &kp RIGHT             &kp PG_DN
             >;
         };
 
