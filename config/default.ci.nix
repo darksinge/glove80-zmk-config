@@ -1,8 +1,7 @@
 { pkgs ?  import <nixpkgs> {} }:
 
 let
-	home = builtins.getEnv "HOME";
-  firmware = import "${home}/projects/git/zmk" {};
+  firmware = import ../src {};
   config = ./.;
 
   glove80_left  = firmware.zmk.override { board = "glove80_lh"; keymap = "${config}/glove80.keymap"; kconfig = "${config}/glove80.conf"; };

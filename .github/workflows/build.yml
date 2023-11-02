@@ -21,6 +21,8 @@ jobs:
         with:
           name: moergo-glove80-zmk-dev
           skipPush: true
+      - name: Copy default.ci.nix -> default.nix
+        run: mv config/default.ci.nix config/default.nix
       - name: Build Glove80 combined firmware
         run: nix-build config -o combined
       - name: Copy result out of nix store
