@@ -24,97 +24,14 @@
 #define HYPER(keycode) LS(LC(LA(LG(keycode))))
 #define MEH(keycode) LS(LC(LA(keycode)))
 
+/* #define layers */
+
 #define LAYER_Base 0
 #define LAYER_Lower 1
 #define LAYER_Colemak 2
 #define LAYER_Symbols 3
 #define LAYER_Magic 4
 #define LAYER_Apps 5
-
-/ {
-    /* Glove80 system behavior & macros */
-
-    behaviors {
-        // For the "layer" key, it'd nice to be able to use it as either a shift or a toggle.
-        // Configure it as a tap dance, so the first tap (or hold) is a &mo and the second tap is a &to
-
-        lower: lower {
-            compatible = "zmk,behavior-tap-dance";
-            label = "LAYER_TAP_DANCE";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mo 1>, <&to 1>;
-        };
-        gqt: gqt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "GLOBAL_QUICK_TAP";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <175>;
-            quick-tap-ms = <175>;
-            global-quick-tap;
-            flavor = "tap-preferred";
-        };
-
-        //   rpi: require_prior_idle {
-        //     compatible = "zmk,behavior-hold-tap";
-        //     label = "REQUIRE_PRIOR_IDLE";
-        //     #binding-cells = <2>;
-        //     flavor = "tap-preferred";
-        //     tapping-term-ms = <175>;
-        //     quick-tap-ms = <150>;
-        //     require-prior-idle-ms = <125>;
-        //     bindings = <&kp>, <&kp>;
-        // };
-    };
-};
-
-/ {
-    macros {
-        rgb_ug_status_macro: rgb_ug_status_macro {
-            label = "RGB_UG_STATUS";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_STATUS>;
-        };
-        bt_0: bt_0 {
-            label = "BT_0";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&out OUT_BLE &bt BT_SEL 0>;
-        };
-        bt_1: bt_1 {
-            label = "BT_1";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&out OUT_BLE &bt BT_SEL 1>;
-        };
-        bt_2: bt_2 {
-            label = "BT_2";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&out OUT_BLE &bt BT_SEL 2>;
-        };
-        bt_3: bt_3 {
-            label = "BT_3";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&out OUT_BLE &bt BT_SEL 3>;
-        };
-    };
-};
-
-/ {
-    magic: magic {
-        compatible = "zmk,behavior-hold-tap";
-        label = "MAGIC_HOLD_TAP";
-        #binding-cells = <2>;
-        flavor = "tap-preferred";
-        tapping-term-ms = <200>;
-        bindings = <&mo>, <&rgb_ug_status_macro>;
-    };
-};
 
 /* #define for key positions */
 
@@ -198,6 +115,113 @@
 #define POS_RH_C6R4 45
 #define POS_RH_C6R5 63
 #define POS_RH_C6R6 79
+
+/ {
+    /* Glove80 system behavior & macros */
+
+    behaviors {
+        // For the "layer" key, it'd nice to be able to use it as either a shift or a toggle.
+        // Configure it as a tap dance, so the first tap (or hold) is a &mo and the second tap is a &to
+
+        lower: lower {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LAYER_TAP_DANCE";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo 1>, <&to 1>;
+        };
+        gqt: gqt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "GLOBAL_QUICK_TAP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <175>;
+            quick-tap-ms = <175>;
+            global-quick-tap;
+            flavor = "tap-preferred";
+        };
+
+        //   rpi: require_prior_idle {
+        //     compatible = "zmk,behavior-hold-tap";
+        //     label = "REQUIRE_PRIOR_IDLE";
+        //     #binding-cells = <2>;
+        //     flavor = "tap-preferred";
+        //     tapping-term-ms = <175>;
+        //     quick-tap-ms = <150>;
+        //     require-prior-idle-ms = <125>;
+        //     bindings = <&kp>, <&kp>;
+        // };
+
+      lh_pht: left_hand_positional_hold_tap {
+        compatible = "zmk,behavior-hold-tap";
+        label = "LEFT_POSITIONAL_HOLD_TAP";
+        #binding-cells = <2>;
+        flavor = "tap-unless-interrupted";
+        tapping-term-ms = <100>;
+        quick-tap-ms = <200>;
+        bindings = <&kp>, <&kp>;
+        hold-trigger-key-positions = <POS_RH_C2R4 POS_RH_C3R4 POS_RH_C4R4 POS_RH_C5R4>; // jkl;
+      };
+
+      rh_pht: right_hand_positional_hold_tap {
+        compatible = "zmk,behavior-hold-tap";
+        label = "LEFT_POSITIONAL_HOLD_TAP";
+        #binding-cells = <2>;
+        flavor = "tap-unless-interrupted";
+        tapping-term-ms = <100>;
+        quick-tap-ms = <200>;
+        bindings = <&kp>, <&kp>;
+        hold-trigger-key-positions = <POS_LH_C5R4 POS_LH_C4R4 POS_LH_C3R4 POS_LH_C2R4>; // jkl;
+      };
+    };
+};
+
+/ {
+    macros {
+        rgb_ug_status_macro: rgb_ug_status_macro {
+            label = "RGB_UG_STATUS";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&rgb_ug RGB_STATUS>;
+        };
+        bt_0: bt_0 {
+            label = "BT_0";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&out OUT_BLE &bt BT_SEL 0>;
+        };
+        bt_1: bt_1 {
+            label = "BT_1";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&out OUT_BLE &bt BT_SEL 1>;
+        };
+        bt_2: bt_2 {
+            label = "BT_2";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&out OUT_BLE &bt BT_SEL 2>;
+        };
+        bt_3: bt_3 {
+            label = "BT_3";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&out OUT_BLE &bt BT_SEL 3>;
+        };
+    };
+};
+
+/ {
+    magic: magic {
+        compatible = "zmk,behavior-hold-tap";
+        label = "MAGIC_HOLD_TAP";
+        #binding-cells = <2>;
+        flavor = "tap-preferred";
+        tapping-term-ms = <200>;
+        bindings = <&mo>, <&rgb_ug_status_macro>;
+    };
+};
 
 /* Custom Defined Behaviors */
 
