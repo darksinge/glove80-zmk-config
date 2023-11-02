@@ -258,8 +258,8 @@
 &kp EQUAL                 &kp N1        &kp N2           &kp N3         &kp N4             &kp N5                                                                                      &kp N6  &kp N7              &kp N8       &kp N9           &kp N0                &kp MINUS
 &kp LS(LC(LG(LEFT_ALT)))  &kp Q         &kp W            &kp E          &kp R              &kp T                                                                                       &kp Y   &kp U               &kp I        &kp O            &kp P                 &kp BSLH
 &kp MINUS                 &gqt LCTRL A  &gqt LEFT_ALT S  &gqt LGUI D    &gqt LEFT_SHIFT F  &kp G                                                                                       &kp H   &gqt RIGHT_SHIFT J  &gqt LGUI K  &gqt LEFT_ALT L  &gqt LCTRL SEMICOLON  &kp SQT
-&kp DEL                   &kp Z         &kp X            &kp C          &kp V              &kp B   &kp LEFT_SHIFT  &lower     &magic 4 0  &kp CAPS          &caps_word  &kp ESC        &kp N   &kp M               &kp COMMA    &kp DOT          &kp FSLH              &kp PG_UP
-&kp LCTRL                 &kp LEFT_ALT  &kp HOME         &kp END        &kp LGUI                   &mo 3           &kp ENTER  &kp TAB     &kp LS(LEFT_ALT)  &kp SPACE   &kp BACKSPACE          &kp LEFT            &kp DOWN     &kp UP           &kp RIGHT             &kp PG_DN
+&kp DEL                   &kp Z         &kp X            &kp C          &kp V              &kp B   &kp LEFT_SHIFT  &lower     &magic 4 0  &kp CAPS          &caps_word  &kp ESC        &kp N   &kp M               &kp COMMA    &kp DOT          &kp FSLH              &kp LG(LA(RIGHT))
+&kp LCTRL                 &kp LEFT_ALT  &kp HOME         &kp END        &kp LGUI                   &mo 3           &kp ENTER  &kp TAB     &kp LS(LEFT_ALT)  &kp SPACE   &kp BACKSPACE          &kp LEFT            &kp DOWN     &kp UP           &kp RIGHT             &kp LG(LA(LEFT))
             >;
         };
 
@@ -291,8 +291,8 @@
 &trans  &kp F1           &kp F2      &kp F3    &kp F4    &kp F5                                                          &kp F6         &kp F7            &kp F8         &kp F9        &kp F10        &kp F11
 &trans  &macro_tmux_vim  &kp LS(N2)  &kp LBRC  &kp RBRC  &macro_vimsbb                                                   &kp LS(MINUS)  &kp GRAVE         &kp LS(N8)     &kp LS(N1)    &kp LS(EQUAL)  &kp F12
 &trans  &kp LS(N3)       &kp LS(N4)  &kp LPAR  &kp RPAR  &kp TAB                                                         &kp MINUS      &kp EQUAL         &kp LS(DOT)    &kp LS(BSLH)  &kp LS(GRAVE)  &kp FSLH
-&trans  &kp LS(N5)       &kp LS(N6)  &kp LBKT  &kp RBKT  &kp PLUS       &trans  &trans  &trans  &trans  &trans  &trans   &kp LS(N7)     &macro_codeblock  &kp LS(COMMA)  &kp LS(DOT)   &kp FSLH       &kp LG(LA(RIGHT))
-&none   &kp LCTRL        &kp HOME    &kp END   &kp LGUI                 &trans  &trans  &trans  &trans  &trans  &kp ESC                 &kp C_MUTE        &kp C_VOL_DN   &kp C_VOL_UP  &kp C_PP       &kp LG(LA(LEFT))
+&trans  &kp LS(N5)       &kp LS(N6)  &kp LBKT  &kp RBKT  &kp PLUS       &trans  &trans  &trans  &trans  &trans  &trans   &kp LS(N7)     &macro_codeblock  &kp LS(COMMA)  &kp LS(DOT)   &kp FSLH       &kp PG_UP
+&none   &kp LCTRL        &kp HOME    &kp END   &kp LGUI                 &trans  &trans  &trans  &trans  &trans  &kp ESC                 &kp C_MUTE        &kp C_VOL_DN   &kp C_VOL_UP  &kp C_PP       &kp PG_DN
             >;
         };
 
