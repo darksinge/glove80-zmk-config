@@ -6,9 +6,11 @@ BG="234"
 FG="117"
 
 VOLUME="GLV80LHBOOT"
-OUTFILE="$(date -u +"%Y%m%d%H%M%S")-glove80.uf2"
+TS=$(date -u +"%Y%m%d%H%M%S")
+OUTFILE="$TS-glove80.uf2"
 PROMPT=1
 BUILD=1
+BUILD_ONLY=0
 PICK_FIRMWARE=0
 
 for arg in "$@"; do
@@ -28,10 +30,18 @@ for arg in "$@"; do
     '--no-build')
       BUILD=0
       ;;
+
+    '--build-only')
+      BUILD_ONLY=1
+      ;;
   esac
 done
 
 clear;
+
+if [ $BUILD_ONLY == 1 ]; then
+  BUILD=1
+fi
 
 if [ $BUILD == 1 ]; then
   gum spin \
@@ -40,11 +50,15 @@ if [ $BUILD == 1 ]; then
     -- bash -c "source ./scripts/functions.sh && build_firmware $OUTFILE"
 fi
 
+if [ $BUILD_ONLY == 1 ]; then
+  exit 0
+fi
+
 if [ $PICK_FIRMWARE == 1 ]; then
   OUTFILE=$(ls -1 ./firmware | grep '.uf2$' | gum filter)
 fi
 
-if [ $PROMPT == 0 ]; then
+if [ $PROMPT == 1 ]; then
   gum confirm --prompt.background "$BG" --prompt.foreground "$FG" \
     --selected.background "$FG" \
     --selected.foreground "$BG" \
