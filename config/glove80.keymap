@@ -289,12 +289,12 @@
 
         layer_Symbols {
             bindings = <
-&to 0   &kp F2           &kp F3      &kp F4    &kp F5                                                                                   &kp F6            &kp F7         &kp F8        &kp F9         &kp F10
-&trans  &kp F1           &kp F2      &kp F3    &kp F4    &kp F5                                                          &kp F6         &kp F7            &kp F8         &kp F9        &kp F10        &kp F11
-&trans  &macro_tmux_vim  &kp LS(N2)  &kp LBRC  &kp RBRC  &macro_vimsbb                                                   &kp LS(MINUS)  &kp GRAVE         &kp LS(N8)     &kp LS(N1)    &kp LS(EQUAL)  &kp F12
-&trans  &kp LS(N3)       &kp LS(N4)  &kp LPAR  &kp RPAR  &kp TAB                                                         &kp MINUS      &kp EQUAL         &kp LS(DOT)    &kp LS(BSLH)  &kp LS(GRAVE)  &kp FSLH
-&trans  &kp LS(N5)       &kp LS(N6)  &kp LBKT  &kp RBKT  &kp PLUS       &trans  &trans  &trans  &trans  &trans  &trans   &kp LS(N7)     &macro_codeblock  &kp LS(COMMA)  &kp LS(DOT)   &kp FSLH       &kp PG_UP
-&none   &kp LCTRL        &kp HOME    &kp END   &kp LGUI                 &trans  &trans  &trans  &trans  &trans  &kp ESC                 &kp C_MUTE        &kp C_VOL_DN   &kp C_VOL_UP  &kp C_PP       &kp PG_DN
+&to 0   &kp F2           &kp F3      &kp F4    &kp F5                                                                                        &kp F6            &kp F7         &kp F8        &kp F9         &kp F10
+&trans  &kp F1           &kp F2      &kp F3    &kp F4    &kp F5                                                               &kp F6         &kp F7            &kp F8         &kp F9        &kp F10        &kp F11
+&trans  &macro_tmux_vim  &kp LS(N2)  &kp LBRC  &kp RBRC  &macro_vimsbb                                                        &kp LS(MINUS)  &kp GRAVE         &kp LS(N8)     &kp LS(N1)    &kp LS(EQUAL)  &kp F12
+&trans  &kp LS(N3)       &kp LS(N4)  &kp LPAR  &kp RPAR  &kp TAB                                                              &kp MINUS      &kp EQUAL         &kp LS(DOT)    &kp LS(BSLH)  &kp LS(GRAVE)  &kp FSLH
+&trans  &kp LS(N5)       &kp LS(N6)  &kp LBKT  &kp RBKT  &kp PLUS       &trans  &trans  &trans  &trans       &trans  &trans   &kp LS(N7)     &macro_codeblock  &kp LS(COMMA)  &kp LS(DOT)   &kp FSLH       &kp PG_UP
+&none   &kp LCTRL        &kp HOME    &kp END   &kp LGUI                 &trans  &trans  &trans  &kp LS(TAB)  &trans  &kp ESC                 &kp C_MUTE        &kp C_VOL_DN   &kp C_VOL_UP  &kp C_PP       &kp PG_DN
             >;
         };
 
