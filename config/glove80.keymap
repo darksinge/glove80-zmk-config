@@ -130,28 +130,28 @@
             tapping-term-ms = <200>;
             bindings = <&mo 1>, <&to 1>;
         };
-        gqt: gqt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "GLOBAL_QUICK_TAP";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <175>;
-            quick-tap-ms = <175>;
-            global-quick-tap;
-            flavor = "tap-preferred";
-        };
-
-        //   rpi: require_prior_idle {
+        // gqt: gqt {
         //     compatible = "zmk,behavior-hold-tap";
-        //     label = "REQUIRE_PRIOR_IDLE";
-        //     #binding-cells = <2>;
-        //     flavor = "tap-preferred";
-        //     tapping-term-ms = <175>;
-        //     quick-tap-ms = <150>;
-        //     require-prior-idle-ms = <125>;
+        //     label = "GLOBAL_QUICK_TAP";
         //     bindings = <&kp>, <&kp>;
+
+        //     #binding-cells = <2>;
+        //     tapping-term-ms = <200>;
+        //     quick-tap-ms = <175>;
+        //     global-quick-tap;
+        //     flavor = "tap-preferred";
         // };
+
+          rpi: require_prior_idle {
+            compatible = "zmk,behavior-hold-tap";
+            label = "REQUIRE_PRIOR_IDLE";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <175>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <125>;
+            bindings = <&kp>, <&kp>;
+        };
     };
 };
 
@@ -259,7 +259,7 @@
 &kp LC(UP)                &kp C_BRI_DN  &kp C_BRI_UP     &kp LG(SPACE)  &kp F5                                                                                                                 &kp F6              &kp C_PREV   &kp C_PP         &kp C_NEXT            &sl 5
 &kp EQUAL                 &kp N1        &kp N2           &kp N3         &kp N4             &kp N5                                                                                      &kp N6  &kp N7              &kp N8       &kp N9           &kp N0                &kp MINUS
 &kp LS(LC(LG(LEFT_ALT)))  &kp Q         &kp W            &kp E          &kp R              &kp T                                                                                       &kp Y   &kp U               &kp I        &kp O            &kp P                 &kp BSLH
-&kp MINUS                 &gqt LCTRL A  &gqt LEFT_ALT S  &kp D          &gqt LEFT_SHIFT F  &kp G                                                                                       &kp H   &gqt RIGHT_SHIFT J  &gqt LGUI K  &gqt LEFT_ALT L  &gqt LCTRL SEMICOLON  &kp SQT
+&kp MINUS                 &rpi LCTRL A  &rpi LEFT_ALT S  &kp D          &rpi LEFT_SHIFT F  &kp G                                                                                       &kp H   &rpi RIGHT_SHIFT J  &rpi LGUI K  &rpi LEFT_ALT L  &rpi LCTRL SEMICOLON  &kp SQT
 &kp DEL                   &kp Z         &kp X            &kp C          &kp V              &kp B   &kp LEFT_SHIFT  &lower     &magic 4 0  &kp CAPS          &caps_word  &kp ESC        &kp N   &kp M               &kp COMMA    &kp DOT          &kp FSLH              &kp LG(LA(RIGHT))
 &kp LCTRL                 &kp LEFT_ALT  &kp HOME         &kp END        &kp LGUI                   &mo 3           &kp ENTER  &kp TAB     &kp LS(LEFT_ALT)  &kp SPACE   &kp BACKSPACE          &kp LEFT            &kp DOWN     &kp UP           &kp RIGHT             &kp LG(LA(LEFT))
             >;
@@ -300,7 +300,7 @@
 
         layer_Magic {
             bindings = <
-&to 0        &none            &none            &reset           &bt BT_CLR                                                                                &bt BT_CLR_ALL  &none  &none  &none  &reset
+&to 0        &none            &none            &sys_reset           &bt BT_CLR                                                                                &bt BT_CLR_ALL  &none  &none  &none  &sys_reset
 &none        &none            &none            &none            &none            &none                                                             &none  &none           &none  &none  &none  &none
 &none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                   &none  &none           &none  &none  &none  &none
 &none        &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                   &none  &none           &none  &none  &none  &none
