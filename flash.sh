@@ -47,6 +47,7 @@ if [ $BUILD == 1 ]; then
   gum spin \
     --spinner minidot --title.foreground "$FG" \
     --title "Building firmware..." \
+    --show-output \
     -- bash -c "source ./scripts/functions.sh && build_firmware $OUTFILE"
 fi
 
