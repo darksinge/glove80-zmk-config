@@ -130,11 +130,11 @@
             tapping-term-ms = <200>;
             bindings = <&mo 1>, <&to 1>;
         };
+
         // gqt: gqt {
         //     compatible = "zmk,behavior-hold-tap";
         //     label = "GLOBAL_QUICK_TAP";
         //     bindings = <&kp>, <&kp>;
-
         //     #binding-cells = <2>;
         //     tapping-term-ms = <200>;
         //     quick-tap-ms = <175>;
@@ -142,7 +142,7 @@
         //     flavor = "tap-preferred";
         // };
 
-          rpi: require_prior_idle {
+        rpi: require_prior_idle {
             compatible = "zmk,behavior-hold-tap";
             label = "REQUIRE_PRIOR_IDLE";
             #binding-cells = <2>;
@@ -271,7 +271,7 @@
 &kp F1         &none      &none           &none           &none            &kp HOME                                                             &kp LEFT_PARENTHESIS   &kp KP_NUM  &kp KP_EQUAL  &kp KP_SLASH  &kp KP_MULTIPLY  &kp F11
 &trans         &none      &none           &kp UP_ARROW    &none            &kp END                                                              &kp RIGHT_PARENTHESIS  &kp KP_N7   &kp KP_N8     &kp KP_N9     &kp KP_MINUS     &kp F12
 &kp LG(LC(Q))  &none      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PG_UP                                                            &kp PERCENT            &kp KP_N4   &kp KP_N5     &kp KP_N6     &kp KP_PLUS      &none
-&trans         &kp K_APP  &none           &kp F11         &kp F12          &kp PG_DN  &kp LG(LC(Q))  &trans  &trans  &to 3  &trans  &caps_word  &kp COMMA              &kp KP_N1   &kp KP_N2     &kp KP_N3     &kp KP_ENTER     &trans
+&trans         &kp K_APP  &none           &kp F11         &kp F12          &kp PG_DN  &kp LG(LC(Q))  &trans  &trans  &to 2  &trans  &caps_word  &kp COMMA              &kp KP_N1   &kp KP_N2     &kp KP_N3     &kp KP_ENTER     &trans
 &magic 4 0     &kp CAPS   &kp INS         &kp F11         &kp F12                     &trans         &trans  &trans  &to 6  &trans  &trans                             &kp KP_N0   &kp KP_N0     &kp KP_DOT    &kp KP_ENTER     &trans
             >;
         };
@@ -300,7 +300,7 @@
 
         layer_Magic {
             bindings = <
-&to 0        &none            &none            &sys_reset           &bt BT_CLR                                                                                &bt BT_CLR_ALL  &none  &none  &none  &sys_reset
+&to 0        &none            &none            &sys_reset       &bt BT_CLR                                                                                &bt BT_CLR_ALL  &none  &none  &none  &sys_reset
 &none        &none            &none            &none            &none            &none                                                             &none  &none           &none  &none  &none  &none
 &none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                   &none  &none           &none  &none  &none  &none
 &none        &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                   &none  &none           &none  &none  &none  &none
