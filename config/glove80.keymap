@@ -117,6 +117,7 @@
 #define POS_RH_C6R6 79
 
 // NOTE: I removed "C" (POS_LH_C3R4) and "D" (POS_LH_C3R5) from `KEYS_LEFT` so I can still do one-handed CTRL-C and CTRL-D
+
 #define KEYS_LEFT POS_LH_C1R2 POS_LH_C1R3 POS_LH_C1R4 POS_LH_C1R5 POS_LH_C2R1 POS_LH_C2R2 POS_LH_C2R3 POS_LH_C2R4 POS_LH_C2R5 POS_LH_C2R6 POS_LH_C3R1 POS_LH_C3R2 POS_LH_C3R3 POS_LH_C3R6 POS_LH_C4R1 POS_LH_C4R2 POS_LH_C4R3 POS_LH_C4R4 POS_LH_C4R5 POS_LH_C4R6 POS_LH_C5R1 POS_LH_C5R2 POS_LH_C5R3 POS_LH_C5R4 POS_LH_C5R5 POS_LH_C5R6 POS_LH_C6R1 POS_LH_C6R2 POS_LH_C6R3 POS_LH_C6R4 POS_LH_C6R5 POS_LH_C6R6
 #define KEYS_RIGHT POS_RH_C1R2 POS_RH_C1R3 POS_RH_C1R4 POS_RH_C1R5 POS_RH_C2R1 POS_RH_C2R2 POS_RH_C2R3 POS_RH_C2R4 POS_RH_C2R5 POS_RH_C2R6 POS_RH_C3R1 POS_RH_C3R2 POS_RH_C3R3 POS_RH_C3R4 POS_RH_C3R5 POS_RH_C3R6 POS_RH_C4R1 POS_RH_C4R2 POS_RH_C4R3 POS_RH_C4R4 POS_RH_C4R5 POS_RH_C4R6 POS_RH_C5R1 POS_RH_C5R2 POS_RH_C5R3 POS_RH_C5R4 POS_RH_C5R5 POS_RH_C5R6 POS_RH_C6R1 POS_RH_C6R2 POS_RH_C6R3 POS_RH_C6R4 POS_RH_C6R5 POS_RH_C6R6
 #define THUMBS POS_RH_T1 POS_RH_T2 POS_RH_T3 POS_RH_T4 POS_RH_T5 POS_RH_T6 POS_LH_T1 POS_LH_T2 POS_LH_T3 POS_LH_T4 POS_LH_T5 POS_LH_T6
@@ -310,9 +311,9 @@
             bindings = <
 &to 0   &kp F2           &kp F3      &kp F4    &kp F5                                                                                        &kp F6            &kp F7         &kp F8        &kp F9         &kp F10
 &trans  &kp F1           &kp F2      &kp F3    &kp F4    &kp F5                                                               &kp F6         &kp F7            &kp F8         &kp F9        &kp F10        &kp F11
-&trans  &macro_tmux_vim  &kp LS(N2)  &kp LBRC  &kp RBRC  &macro_vimsbb                                                        &kp LS(MINUS)  &kp GRAVE         &kp LS(N8)     &kp LS(N1)    &kp LS(EQUAL)  &kp F12
+&trans  &macro_tmux_vim  &kp LS(N2)  &kp LBRC  &kp RBRC  &macro_vimsbb                                                        &kp LS(MINUS)  &kp PLUS          &kp LS(N8)     &kp LS(N1)    &kp LS(EQUAL)  &kp F12
 &trans  &kp LS(N3)       &kp LS(N4)  &kp LPAR  &kp RPAR  &kp TAB                                                              &kp MINUS      &kp EQUAL         &kp LS(DOT)    &kp LS(BSLH)  &kp LS(GRAVE)  &kp FSLH
-&trans  &kp LS(N5)       &kp LS(N6)  &kp LBKT  &kp RBKT  &kp PLUS       &trans  &trans  &trans  &trans       &trans  &trans   &kp LS(N7)     &macro_codeblock  &kp LS(COMMA)  &kp LS(DOT)   &kp FSLH       &kp PG_UP
+&trans  &kp LS(N5)       &kp LS(N6)  &kp LBKT  &kp RBKT  &kp GRAVE      &trans  &trans  &trans  &trans       &trans  &trans   &kp LS(N7)     &macro_codeblock  &kp LS(COMMA)  &kp LS(DOT)   &kp FSLH       &kp PG_UP
 &none   &kp LCTRL        &kp HOME    &kp END   &kp LGUI                 &trans  &trans  &trans  &kp LS(TAB)  &trans  &kp ESC                 &kp C_MUTE        &kp C_VOL_DN   &kp C_VOL_UP  &kp C_PP       &kp PG_DN
             >;
         };
