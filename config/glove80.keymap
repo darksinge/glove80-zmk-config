@@ -116,6 +116,10 @@
 #define POS_RH_C6R5 63
 #define POS_RH_C6R6 79
 
+#define KEYS_LEFT POS_LH_C1R2 POS_LH_C1R3 POS_LH_C1R4 POS_LH_C1R5 POS_LH_C2R1 POS_LH_C2R2 POS_LH_C2R3 POS_LH_C2R4 POS_LH_C2R5 POS_LH_C2R6 POS_LH_C3R1 POS_LH_C3R2 POS_LH_C3R3 POS_LH_C3R4 POS_LH_C3R5 POS_LH_C3R6 POS_LH_C4R1 POS_LH_C4R2 POS_LH_C4R3 POS_LH_C4R4 POS_LH_C4R5 POS_LH_C4R6 POS_LH_C5R1 POS_LH_C5R2 POS_LH_C5R3 POS_LH_C5R4 POS_LH_C5R5 POS_LH_C5R6 POS_LH_C6R1 POS_LH_C6R2 POS_LH_C6R3 POS_LH_C6R4 POS_LH_C6R5 POS_LH_C6R6
+#define KEYS_RIGHT POS_RH_C1R2 POS_RH_C1R3 POS_RH_C1R4 POS_RH_C1R5 POS_RH_C2R1 POS_RH_C2R2 POS_RH_C2R3 POS_RH_C2R4 POS_RH_C2R5 POS_RH_C2R6 POS_RH_C3R1 POS_RH_C3R2 POS_RH_C3R3 POS_RH_C3R4 POS_RH_C3R5 POS_RH_C3R6 POS_RH_C4R1 POS_RH_C4R2 POS_RH_C4R3 POS_RH_C4R4 POS_RH_C4R5 POS_RH_C4R6 POS_RH_C5R1 POS_RH_C5R2 POS_RH_C5R3 POS_RH_C5R4 POS_RH_C5R5 POS_RH_C5R6 POS_RH_C6R1 POS_RH_C6R2 POS_RH_C6R3 POS_RH_C6R4 POS_RH_C6R5 POS_RH_C6R6
+#define THUMBS POS_RH_T1 POS_RH_T2 POS_RH_T3 POS_RH_T4 POS_RH_T5 POS_RH_T6 POS_LH_T1 POS_LH_T2 POS_LH_T3 POS_LH_T4 POS_LH_T5 POS_LH_T6
+
 / {
     /* Glove80 system behavior & macros */
 
@@ -131,17 +135,6 @@
             bindings = <&mo 1>, <&to 1>;
         };
 
-        // gqt: gqt {
-        //     compatible = "zmk,behavior-hold-tap";
-        //     label = "GLOBAL_QUICK_TAP";
-        //     bindings = <&kp>, <&kp>;
-        //     #binding-cells = <2>;
-        //     tapping-term-ms = <200>;
-        //     quick-tap-ms = <175>;
-        //     global-quick-tap;
-        //     flavor = "tap-preferred";
-        // };
-
         rpi: require_prior_idle {
             compatible = "zmk,behavior-hold-tap";
             label = "REQUIRE_PRIOR_IDLE";
@@ -151,6 +144,33 @@
             quick-tap-ms = <150>;
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
+        };
+
+        hml: hold_tap_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM_HOLD_TAP_LEFT";
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_RIGHT THUMBS>;
+            hold-trigger-on-release; 
+        };
+
+
+        hmr: hold_tap_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM_HOLD_TAP_RIGHT";
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <KEYS_LEFT THUMBS>;
+            hold-trigger-on-release; 
         };
     };
 };
@@ -259,7 +279,7 @@
 &kp LC(UP)                &kp C_BRI_DN  &kp C_BRI_UP     &kp LG(SPACE)  &kp F5                                                                                                                 &kp F6              &kp C_PREV   &kp C_PP         &kp C_NEXT            &sl 5
 &kp EQUAL                 &kp N1        &kp N2           &kp N3         &kp N4             &kp N5                                                                                      &kp N6  &kp N7              &kp N8       &kp N9           &kp N0                &kp MINUS
 &kp LS(LC(LG(LEFT_ALT)))  &kp Q         &kp W            &kp E          &kp R              &kp T                                                                                       &kp Y   &kp U               &kp I        &kp O            &kp P                 &kp BSLH
-&kp MINUS                 &rpi LCTRL A  &rpi LEFT_ALT S  &kp D          &rpi LEFT_SHIFT F  &kp G                                                                                       &kp H   &rpi RIGHT_SHIFT J  &rpi LGUI K  &rpi LEFT_ALT L  &rpi LCTRL SEMICOLON  &kp SQT
+&kp MINUS                 &hml LCTRL A  &hml LEFT_ALT S  &hml LEFT_GUI D          &hml LEFT_SHIFT F  &kp G                                                                                       &kp H   &hmr RIGHT_SHIFT J  &hmr LGUI K  &hmr LEFT_ALT L  &hmr LCTRL SEMICOLON  &kp SQT
 &kp DEL                   &kp Z         &kp X            &kp C          &kp V              &kp B   &kp LEFT_SHIFT  &lower     &magic 4 0  &kp CAPS          &caps_word  &kp ESC        &kp N   &kp M               &kp COMMA    &kp DOT          &kp FSLH              &kp LG(LA(RIGHT))
 &kp LCTRL                 &kp LEFT_ALT  &kp HOME         &kp END        &kp LGUI                   &mo 3           &kp ENTER  &kp TAB     &kp LS(LEFT_ALT)  &kp SPACE   &kp BACKSPACE          &kp LEFT            &kp DOWN     &kp UP           &kp RIGHT             &kp LG(LA(LEFT))
             >;
