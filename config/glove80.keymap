@@ -299,12 +299,12 @@
 
         layer_Lower {
             bindings = <
-&to 0          &kp F2         &kp F3                    &kp F4     &kp F5                                                                                                                 &kp F6      &kp F7        &kp F8        &kp F9           &kp F10
-&kp F1         &none          &none                     &none      &none                      &kp HOME                                                             &kp LEFT_PARENTHESIS   &kp KP_NUM  &kp KP_EQUAL  &kp KP_SLASH  &kp KP_MULTIPLY  &kp F11
-&trans         &none          &kp LS(BACKSPACE)         &kp SPACE  &kp L                      &kp END                                                              &kp RIGHT_PARENTHESIS  &kp KP_N7   &kp KP_N8     &kp KP_N9     &kp KP_MINUS     &kp F12
-&kp LG(LC(Q))  &kp LS(LG(A))  &kp LS(LG(LEFT_BRACKET))  &kp LG(B)  &kp LS(LG(RIGHT_BRACKET))  &kp PG_UP                                                            &kp PERCENT            &kp KP_N4   &kp KP_N5     &kp KP_N6     &kp KP_PLUS      &none
-&trans         &kp K_APP      &none                     &kp F11    &kp F12                    &kp PG_DN  &kp LG(LC(Q))  &trans  &trans  &to 2  &trans  &caps_word  &kp COMMA              &kp KP_N1   &kp KP_N2     &kp KP_N3     &kp KP_ENTER     &trans
-&magic 4 0     &kp CAPS       &kp INS                   &kp F11    &kp F12                               &trans         &trans  &trans  &to 6  &trans  &trans                             &kp KP_N0   &kp KP_N0     &kp KP_DOT    &kp KP_ENTER     &trans
+&to 0          &kp F2         &kp F3                    &kp F4         &kp F5                                                                                                                 &kp F6      &kp F7        &kp F8        &kp F9           &kp F10
+&kp F1         &none          &none                     &none          &none                      &kp HOME                                                             &kp LEFT_PARENTHESIS   &kp KP_NUM  &kp KP_EQUAL  &kp KP_SLASH  &kp KP_MULTIPLY  &kp F11
+&trans         &none          &kp LS(BACKSPACE)         &kp SPACE      &kp L                      &kp END                                                              &kp RIGHT_PARENTHESIS  &kp KP_N7   &kp KP_N8     &kp KP_N9     &kp KP_MINUS     &kp F12
+&kp LG(LC(Q))  &kp LS(LG(A))  &kp LS(LG(LEFT_BRACKET))  &kp LG(B)      &kp LS(LG(RIGHT_BRACKET))  &kp PG_UP                                                            &kp PERCENT            &kp KP_N4   &kp KP_N5     &kp KP_N6     &kp KP_PLUS      &none
+&trans         &kp K_APP      &kp N                     &kp LS(LG(L))  &none                      &kp PG_DN  &kp LG(LC(Q))  &trans  &trans  &to 2  &trans  &caps_word  &kp COMMA              &kp KP_N1   &kp KP_N2     &kp KP_N3     &kp KP_ENTER     &trans
+&magic 4 0     &kp CAPS       &kp INS                   &kp F11        &kp F12                               &trans         &trans  &trans  &to 6  &trans  &trans                             &kp KP_N0   &kp KP_N0     &kp KP_DOT    &kp KP_ENTER     &trans
             >;
         };
 
