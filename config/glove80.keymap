@@ -117,6 +117,7 @@
 #define POS_RH_C6R6 79
 
 // NOTE: I removed "C" (POS_LH_C3R4) and "D" (POS_LH_C3R5) from `KEYS_LEFT` so I can still do one-handed CTRL-C and CTRL-D
+
 #define KEYS_LEFT POS_LH_C1R2 POS_LH_C1R3 POS_LH_C1R4 POS_LH_C1R5 POS_LH_C2R1 POS_LH_C2R2 POS_LH_C2R3 POS_LH_C2R4 POS_LH_C2R5 POS_LH_C2R6 POS_LH_C3R1 POS_LH_C3R2 POS_LH_C3R3 POS_LH_C3R6 POS_LH_C4R1 POS_LH_C4R2 POS_LH_C4R3 POS_LH_C4R4 POS_LH_C4R5 POS_LH_C4R6 POS_LH_C5R1 POS_LH_C5R2 POS_LH_C5R3 POS_LH_C5R4 POS_LH_C5R5 POS_LH_C5R6 POS_LH_C6R1 POS_LH_C6R2 POS_LH_C6R3 POS_LH_C6R4 POS_LH_C6R5 POS_LH_C6R6
 #define KEYS_RIGHT POS_RH_C1R2 POS_RH_C1R3 POS_RH_C1R4 POS_RH_C1R5 POS_RH_C2R1 POS_RH_C2R2 POS_RH_C2R3 POS_RH_C2R4 POS_RH_C2R5 POS_RH_C2R6 POS_RH_C3R1 POS_RH_C3R2 POS_RH_C3R3 POS_RH_C3R4 POS_RH_C3R5 POS_RH_C3R6 POS_RH_C4R1 POS_RH_C4R2 POS_RH_C4R3 POS_RH_C4R4 POS_RH_C4R5 POS_RH_C4R6 POS_RH_C5R1 POS_RH_C5R2 POS_RH_C5R3 POS_RH_C5R4 POS_RH_C5R5 POS_RH_C5R6 POS_RH_C6R1 POS_RH_C6R2 POS_RH_C6R3 POS_RH_C6R4 POS_RH_C6R5 POS_RH_C6R6
 #define THUMBS POS_RH_T1 POS_RH_T2 POS_RH_T3 POS_RH_T4 POS_RH_T5 POS_RH_T6 POS_LH_T1 POS_LH_T2 POS_LH_T3 POS_LH_T4 POS_LH_T5 POS_LH_T6
@@ -180,6 +181,7 @@
             require-prior-idle-ms = <150>;
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-on-release;
         };
     };
@@ -286,23 +288,23 @@
 
         layer_Base {
             bindings = <
-&kp LC(UP)                &kp C_BRI_DN  &kp C_BRI_UP     &kp LG(SPACE)    &kp F5                                                                                                        &kp F6              &kp C_PREV   &kp C_PP         &kp C_NEXT            &sl 5
-&kp EQUAL                 &kp N1        &kp N2           &kp N3           &kp N4    &kp N5                                                                                      &kp N6  &kp N7              &kp N8       &kp N9           &kp N0                &kp MINUS
-&kp LS(LC(LG(LEFT_ALT)))  &kp Q         &kp W            &kp E            &kp R     &kp T                                                                                       &kp Y   &kp U               &kp I        &kp O            &kp P                 &kp BSLH
-&kp MINUS                 &qt LCTRL A  &hml LEFT_ALT S  &hml LEFT_GUI D  &kp F     &kp G                                                                                       &kp H   &kp J  &hmr LGUI K  &hmr LEFT_ALT L  &qt LCTRL SEMICOLON  &kp SQT
-&kp DEL                   &kp Z         &kp X            &kp C            &kp V     &kp B   &kp LEFT_SHIFT  &lower     &magic 4 0  &kp CAPS          &caps_word  &kp ESC        &kp N   &kp M               &kp COMMA    &kp DOT          &kp FSLH              &kp LG(LA(RIGHT))
-&kp LCTRL                 &kp LEFT_ALT  &kp HOME         &kp END          &kp LGUI          &mo 3           &kp ENTER  &kp TAB     &kp LS(LEFT_ALT)  &kp SPACE   &kp BACKSPACE          &kp LEFT            &kp DOWN     &kp UP           &kp RIGHT             &kp LG(LA(LEFT))
+&kp LC(UP)                &kp C_BRI_DN  &kp C_BRI_UP     &kp LG(SPACE)    &kp F5                                                                                                        &kp F6    &kp C_PREV   &kp C_PP         &kp C_NEXT           &sl 5
+&kp EQUAL                 &kp N1        &kp N2           &kp N3           &kp N4    &kp N5                                                                                      &kp N6  &kp N7    &kp N8       &kp N9           &kp N0               &kp MINUS
+&kp LS(LC(LG(LEFT_ALT)))  &kp Q         &kp W            &kp E            &kp R     &kp T                                                                                       &kp Y   &kp U     &kp I        &kp O            &kp P                &kp BSLH
+&kp MINUS                 &qt LCTRL A   &hml LEFT_ALT S  &hml LEFT_GUI D  &kp F     &kp G                                                                                       &kp H   &kp J     &hmr LGUI K  &hmr LEFT_ALT L  &qt LCTRL SEMICOLON  &kp SQT
+&kp DEL                   &kp Z         &kp X            &kp C            &kp V     &kp B   &kp LEFT_SHIFT  &lower     &magic 4 0  &kp CAPS          &caps_word  &kp ESC        &kp N   &kp M     &kp COMMA    &kp DOT          &kp FSLH             &kp LG(LA(RIGHT))
+&kp LCTRL                 &kp LEFT_ALT  &kp HOME         &kp END          &kp LGUI          &mo 3           &kp ENTER  &kp TAB     &kp LS(LEFT_ALT)  &kp SPACE   &kp BACKSPACE          &kp LEFT  &kp DOWN     &kp UP           &kp RIGHT            &kp LG(LA(LEFT))
             >;
         };
 
         layer_Lower {
             bindings = <
-&to 0          &kp F2         &kp F3          &kp F4          &kp F5                                                                                                       &kp F6      &kp F7        &kp F8        &kp F9           &kp F10
-&kp F1         &none          &none           &none           &none            &kp HOME                                                             &kp LEFT_PARENTHESIS   &kp KP_NUM  &kp KP_EQUAL  &kp KP_SLASH  &kp KP_MULTIPLY  &kp F11
-&trans         &none          &none           &kp UP_ARROW    &none            &kp END                                                              &kp RIGHT_PARENTHESIS  &kp KP_N7   &kp KP_N8     &kp KP_N9     &kp KP_MINUS     &kp F12
-&kp LG(LC(Q))  &kp LS(LG(A))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PG_UP                                                            &kp PERCENT            &kp KP_N4   &kp KP_N5     &kp KP_N6     &kp KP_PLUS      &none
-&trans         &kp K_APP      &none           &kp F11         &kp F12          &kp PG_DN  &kp LG(LC(Q))  &trans  &trans  &to 2  &trans  &caps_word  &kp COMMA              &kp KP_N1   &kp KP_N2     &kp KP_N3     &kp KP_ENTER     &trans
-&magic 4 0     &kp CAPS       &kp INS         &kp F11         &kp F12                     &trans         &trans  &trans  &to 6  &trans  &trans                             &kp KP_N0   &kp KP_N0     &kp KP_DOT    &kp KP_ENTER     &trans
+&to 0          &kp F2         &kp F3                    &kp F4         &kp F5                                                                                                                 &kp F6      &kp F7        &kp F8        &kp F9           &kp F10
+&kp F1         &none          &none                     &none          &none                      &kp HOME                                                             &kp LEFT_PARENTHESIS   &kp KP_NUM  &kp KP_EQUAL  &kp KP_SLASH  &kp KP_MULTIPLY  &kp F11
+&trans         &none          &none                     &kp BACKSPACE  &none                      &kp END                                                              &kp RIGHT_PARENTHESIS  &kp KP_N7   &kp KP_N8     &kp KP_N9     &kp KP_MINUS     &kp F12
+&kp LG(LC(Q))  &kp LS(LG(A))  &kp LS(LG(LEFT_BRACKET))  &kp LG(B)      &kp LS(LG(RIGHT_BRACKET))  &kp PG_UP                                                            &kp PERCENT            &kp KP_N4   &kp KP_N5     &kp KP_N6     &kp KP_PLUS      &none
+&trans         &kp K_APP      &none                     &kp F11        &kp F12                    &kp PG_DN  &kp LG(LC(Q))  &trans  &trans  &to 2  &trans  &caps_word  &kp COMMA              &kp KP_N1   &kp KP_N2     &kp KP_N3     &kp KP_ENTER     &trans
+&magic 4 0     &kp CAPS       &kp INS                   &kp F11        &kp F12                               &trans         &trans  &trans  &to 6  &trans  &trans                             &kp KP_N0   &kp KP_N0     &kp KP_DOT    &kp KP_ENTER     &trans
             >;
         };
 
@@ -358,6 +360,17 @@
 &trans      &kp A         &kp S   &kp D   &kp F         &trans                                                        &trans  &kp J   &kp K   &kp L   &kp SEMI  &trans
 &kp LSHIFT  &trans        &trans  &trans  &trans        &trans  &kp ESC    &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &kp PG_UP
 &kp LCTRL   &kp LEFT_ALT  &trans  &trans  &kp LEFT_GUI          &kp SPACE  &kp ENTER  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans    &kp PG_DN
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
