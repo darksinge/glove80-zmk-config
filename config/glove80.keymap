@@ -136,6 +136,7 @@
             tapping-term-ms = <200>;
             bindings = <&mo 1>, <&to 1>;
         };
+
         rpi: require_prior_idle {
             compatible = "zmk,behavior-hold-tap";
             label = "REQUIRE_PRIOR_IDLE";
@@ -146,6 +147,7 @@
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
+
         hml: hold_tap_left {
             compatible = "zmk,behavior-hold-tap";
             label = "HRM_HOLD_TAP_LEFT";
@@ -159,6 +161,7 @@
             hold-trigger-key-positions = <KEYS_RIGHT THUMBS>;
             hold-trigger-on-release;
         };
+
         hmr: hold_tap_right {
             compatible = "zmk,behavior-hold-tap";
             label = "HRM_HOLD_TAP_RIGHT";
@@ -172,6 +175,7 @@
             hold-trigger-key-positions = <KEYS_LEFT THUMBS>;
             hold-trigger-on-release;
         };
+
         qt: quick_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "QUICK_TAP";
@@ -195,24 +199,28 @@
             #binding-cells = <0>;
             bindings = <&rgb_ug RGB_STATUS>;
         };
+
         bt_0: bt_0 {
             label = "BT_0";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &bt BT_SEL 0>;
         };
+
         bt_1: bt_1 {
             label = "BT_1";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &bt BT_SEL 1>;
         };
+
         bt_2: bt_2 {
             label = "BT_2";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &bt BT_SEL 2>;
         };
+
         bt_3: bt_3 {
             label = "BT_3";
             compatible = "zmk,behavior-macro";
@@ -244,6 +252,7 @@
         tap-ms = <40>;
         bindings = <&kp GRAVE &kp GRAVE &kp GRAVE &kp LS(ENTER) &kp GRAVE &kp GRAVE &kp GRAVE &kp UP &kp LS(ENTER)>;
     };
+
     macro_vimsbb: macro_vim_select_between_brackets {
         compatible = "zmk,behavior-macro";
         label = "macro_vimsbb";
@@ -252,6 +261,7 @@
         tap-ms = <40>;
         bindings = <&kp LS(N4) &kp H &kp LS(V) &kp PERCENT>;
     };
+
     macro_tmux_vim: macro_tmux_vim {
         compatible = "zmk,behavior-macro";
         label = "macro_tmux_vim";
@@ -260,6 +270,7 @@
         tap-ms = <40>;
         bindings = <&kp LG(S) &kp LBKT>;
     };
+
     mo_rgb: mo_rgb {
         label = "LAYER_MOD";
         compatible = "zmk,behavior-macro";
@@ -288,7 +299,7 @@
 
         toggle_layer1 {
             bindings = <&to 1>;
-            key-positions = <52 53 54>;
+            key-positions = <52 38 37>;
         };
     };
 
@@ -352,12 +363,12 @@
 
         layer_Apps {
             bindings = <
-&to 0  &none                  &none                  &none                  &none                                                                                                          &none                  &none                  &none                  &none                  &none
-&none  &none                  &none                  &none                  &none                  &none                                                            &none                  &none                  &none                  &none                  &none                  &none
-&none  &kp LG(LS(LC(LA(Q))))  &kp LG(LS(LC(LA(W))))  &kp LG(LS(LC(LA(E))))  &kp LG(LS(LC(LA(R))))  &kp LG(LS(LC(LA(T))))                                            &kp LG(LS(LC(LA(Y))))  &kp LG(LS(LC(LA(U))))  &kp LG(LS(LC(LA(I))))  &kp LG(LS(LC(LA(O))))  &kp LG(LS(LC(LA(P))))  &none
-&none  &kp LG(LS(LC(LA(A))))  &kp LG(LS(LC(LA(S))))  &kp LG(LS(LC(LA(D))))  &kp LG(LS(LC(LA(F))))  &kp LG(LS(LC(LA(G))))                                            &kp LG(LS(LC(LA(H))))  &kp LG(LS(LC(LA(J))))  &kp LG(LS(LC(LA(K))))  &kp LG(LS(LC(LA(L))))  &none                  &none
-&none  &kp LG(LS(LC(LA(Z))))  &kp LG(LS(LC(LA(X))))  &kp LG(LS(LC(LA(C))))  &kp LG(LS(LC(LA(V))))  &kp LG(LS(LC(LA(B))))  &none  &none  &none  &none  &none  &none  &kp LG(LS(LC(LA(N))))  &kp LG(LS(LC(LA(M))))  &none                  &none                  &none                  &none
-&none  &none                  &none                  &none                  &none                                         &none  &none  &none  &none  &none  &none                         &none                  &none                  &none                  &none                  &none
+&to 0   &kp F2                 &kp F3                 &kp F4                 &kp F5                                                                                                         &kp F6                 &kp F7                 &kp F8                 &kp F9                 &kp F10
+&kp F1  &none                  &none                  &none                  &none                  &none                                                            &none                  &none                  &none                  &none                  &none                  &kp F11
+&none   &kp LG(LS(LC(LA(Q))))  &kp LG(LS(LC(LA(W))))  &kp LG(LS(LC(LA(E))))  &kp LG(LS(LC(LA(R))))  &kp LG(LS(LC(LA(T))))                                            &kp LG(LS(LC(LA(Y))))  &kp LG(LS(LC(LA(U))))  &kp LG(LS(LC(LA(I))))  &kp LG(LS(LC(LA(O))))  &kp LG(LS(LC(LA(P))))  &kp F12
+&none   &kp LG(LS(LC(LA(A))))  &kp LG(LS(LC(LA(S))))  &kp LG(LS(LC(LA(D))))  &kp LG(LS(LC(LA(F))))  &kp LG(LS(LC(LA(G))))                                            &kp LG(LS(LC(LA(H))))  &kp LG(LS(LC(LA(J))))  &kp LG(LS(LC(LA(K))))  &kp LG(LS(LC(LA(L))))  &none                  &none
+&none   &kp LG(LS(LC(LA(Z))))  &kp LG(LS(LC(LA(X))))  &kp LG(LS(LC(LA(C))))  &kp LG(LS(LC(LA(V))))  &kp LG(LS(LC(LA(B))))  &none  &none  &none  &none  &none  &none  &kp LG(LS(LC(LA(N))))  &kp LG(LS(LC(LA(M))))  &none                  &none                  &none                  &none
+&none   &none                  &none                  &none                  &none                                         &none  &none  &none  &none  &none  &none                         &none                  &none                  &none                  &none                  &none
             >;
         };
 
