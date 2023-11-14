@@ -13,6 +13,18 @@ BUILD=1
 BUILD_ONLY=0
 PICK_FIRMWARE=0
 
+function usage() {
+  echo "Usage: flash.sh [OPTIONS]"
+  echo
+  echo "Options:"
+  echo "  --no-prompt               Disables interactive prompts during execution."
+  echo "  -p, --pick-firmware       Enables firmware selection mode."
+  echo "  -o, --outfile             Specifies the output file for the script's results."
+  echo "  --no-build                Disables the build process."
+  echo "  --build-only              Executes only the build process, without other script actions."
+  echo "  -h, --help                Displays this help message."
+}
+
 for arg in "$@"; do
   case "$arg" in
     '--no-prompt')
@@ -33,6 +45,10 @@ for arg in "$@"; do
 
     '--build-only')
       BUILD_ONLY=1
+      ;;
+    '--help' | '-h')
+      usage
+      exit 0
       ;;
   esac
 done
