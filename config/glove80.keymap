@@ -354,7 +354,7 @@
 &trans  &kp N   &kp LS(LG(L))             &kp LG(LA(L))  &kp LA(Y)                  &kp LA(X)                                                                    &kp RIGHT_PARENTHESIS  &kp KP_N7   &kp KP_N8     &kp KP_N9     &kp KP_MINUS     &kp F12
 &trans  &trans  &kp LS(LG(LEFT_BRACKET))  &kp LG(B)      &kp LS(LG(RIGHT_BRACKET))  &kp LS(BACKSPACE)                                                            &kp PERCENT            &kp KP_N4   &kp KP_N5     &kp KP_N6     &kp KP_PLUS      &kp K_MUTE
 &trans  &trans  &kp J                     &kp SPACE      &kp L                      &kp BACKSPACE      &kp LG(LC(Q))  &trans  &trans  &to 2  &trans  &caps_word  &kp COMMA              &kp KP_N1   &kp KP_N2     &kp KP_N3     &kp KP_ENTER     &kp C_VOLUME_UP
-&trans  &trans  &trans                    &trans         &trans                                        &trans         &trans  &trans  &to 7  &trans  &trans                             &kp KP_N0   &kp KP_N0     &kp KP_DOT    &kp KP_ENTER     &kp C_VOL_DN
+&trans  &trans  &trans                    &trans         &trans                                        &trans         &trans  &trans  &to 6  &trans  &trans                             &kp KP_N0   &kp KP_N0     &kp KP_DOT    &kp KP_ENTER     &kp C_VOL_DN
             >;
         };
 
