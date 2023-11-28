@@ -360,12 +360,12 @@
 
         layer_Colemak {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                  &trans  &trans  &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                  &trans  &trans  &trans  &trans  &trans    &trans
-&trans  &kp Q   &kp W   &kp F   &kp P   &kp G                                                   &kp J   &kp L   &kp U   &kp Y   &kp SEMI  &trans
-&trans  &kp A   &kp R   &kp S   &kp T   &kp D                                                   &kp H   &kp N   &kp E   &kp I   &kp O     &trans
-&trans  &kp Z   &kp X   &kp C   &kp V   &kp B   &trans  &trans  &trans  &trans  &trans  &trans  &kp K   &kp M   &trans  &trans  &kp A     &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans    &trans
+&trans  &trans       &trans           &trans           &trans                                                                  &trans  &trans            &trans            &trans       &trans
+&trans  &trans       &trans           &trans           &trans  &trans                                                  &trans  &trans  &trans            &trans            &trans       &trans
+&trans  &kp Q        &kp W            &kp F            &kp P   &kp G                                                   &kp J   &kp L   &kp U             &kp Y             &kp SEMI     &trans
+&trans  &qt LCTRL A  &hml LEFT_ALT R  &hml LEFT_GUI S  &kp T   &kp D                                                   &kp H   &kp N   &hmr RIGHT_GUI E  &hmr I RIGHT_ALT  &qt RCTRL O  &trans
+&trans  &kp Z        &kp X            &kp C            &kp V   &kp B   &trans  &trans  &trans  &trans  &trans  &trans  &kp K   &kp M   &trans            &trans            &kp A        &trans
+&trans  &trans       &trans           &trans           &trans          &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans            &trans            &trans       &trans
             >;
         };
 
