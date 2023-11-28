@@ -340,10 +340,10 @@
             bindings = <
 &kp LC(UP)      &kp C_BRI_DN  &kp C_BRI_UP     &kp LG(SPACE)    &kp F5                                                                                                        &kp F6    &kp C_PREV   &kp C_PP         &kp C_NEXT           &sl 5
 &kp EQUAL       &kp N1        &kp N2           &kp N3           &kp N4    &kp N5                                                                                      &kp N6  &kp N7    &kp N8       &kp N9           &kp N0               &kp MINUS
-&kp CAPSLOCK    &kp Q         &kp W            &kp E            &kp R     &kp T                                                                                       &kp Y   &kp U     &kp I        &kp O            &kp P                &kp BSLH
+&to 1           &kp Q         &kp W            &kp E            &kp R     &kp T                                                                                       &kp Y   &kp U     &kp I        &kp O            &kp P                &kp BSLH
 &kp MINUS       &qt LCTRL A   &hml LEFT_ALT S  &hml LEFT_GUI D  &kp F     &kp G                                                                                       &kp H   &kp J     &hmr LGUI K  &hmr LEFT_ALT L  &qt LCTRL SEMICOLON  &kp SQT
-&kp LEFT_SHIFT  &kp Z         &kp X            &kp C            &kp V     &kp B   &mo 3           &lower     &magic 4 0  &kp LS(LEFT_ALT)  &caps_word  &kp ESC        &kp N   &kp M     &kp COMMA    &kp DOT          &kp FSLH             &kp LG(LA(RIGHT))
-&kp LCTRL       &kp LEFT_ALT  &kp HOME         &kp END          &kp LGUI          &kp LEFT_SHIFT  &kp ENTER  &kp TAB     &mo 3             &kp SPACE   &kp BACKSPACE          &kp LEFT  &kp DOWN     &kp UP           &kp RIGHT            &kp LG(LA(LEFT))
+&kp LEFT_SHIFT  &kp Z         &kp X            &kp C            &kp V     &kp B   &mo 3           &lower     &magic 4 0  &kp CAPSLOCK      &caps_word  &kp ESC        &kp N   &kp M     &kp COMMA    &kp DOT          &kp FSLH             &kp LG(LA(RIGHT))
+&kp LCTRL       &kp LEFT_ALT  &kp HOME         &kp END          &kp LGUI          &kp LEFT_SHIFT  &kp ENTER  &kp TAB     &kp LS(LEFT_ALT)  &kp SPACE   &kp BACKSPACE          &kp LEFT  &kp DOWN     &kp UP           &kp RIGHT            &kp LG(LA(LEFT))
             >;
         };
 
@@ -351,7 +351,7 @@
             bindings = <
 &to 0   &kp F2  &kp F3                    &kp F4         &kp F5                                                                                                                         &kp F6      &kp F7        &kp F8        &kp F9           &kp F10
 &kp F1  &none   &none                     &none          &none                      &trans                                                                       &kp LEFT_PARENTHESIS   &kp KP_NUM  &kp KP_EQUAL  &kp KP_SLASH  &kp KP_MULTIPLY  &kp F11
-&trans  &kp N   &kp LS(LG(L))             &kp LG(LA(L))  &kp LA(Y)                  &kp LA(X)                                                                    &kp RIGHT_PARENTHESIS  &kp KP_N7   &kp KP_N8     &kp KP_N9     &kp KP_MINUS     &kp F12
+&to 0   &kp N   &kp LS(LG(L))             &kp LG(LA(L))  &kp LA(Y)                  &kp LA(X)                                                                    &kp RIGHT_PARENTHESIS  &kp KP_N7   &kp KP_N8     &kp KP_N9     &kp KP_MINUS     &kp F12
 &trans  &trans  &kp LS(LG(LEFT_BRACKET))  &kp LG(B)      &kp LS(LG(RIGHT_BRACKET))  &kp LS(BACKSPACE)                                                            &kp PERCENT            &kp KP_N4   &kp KP_N5     &kp KP_N6     &kp KP_PLUS      &kp K_MUTE
 &trans  &trans  &kp J                     &kp SPACE      &kp L                      &kp BACKSPACE      &kp LG(LC(Q))  &trans  &trans  &to 2  &trans  &caps_word  &kp COMMA              &kp KP_N1   &kp KP_N2     &kp KP_N3     &kp KP_ENTER     &kp C_VOLUME_UP
 &trans  &trans  &trans                    &trans         &trans                                        &trans         &trans  &trans  &to 6  &trans  &trans                             &kp KP_N0   &kp KP_N0     &kp KP_DOT    &kp KP_ENTER     &kp C_VOL_DN
