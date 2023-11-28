@@ -342,8 +342,8 @@
 &kp EQUAL       &kp N1        &kp N2           &kp N3           &kp N4    &kp N5                                                                                      &kp N6  &kp N7    &kp N8       &kp N9           &kp N0               &kp MINUS
 &kp CAPSLOCK    &kp Q         &kp W            &kp E            &kp R     &kp T                                                                                       &kp Y   &kp U     &kp I        &kp O            &kp P                &kp BSLH
 &kp MINUS       &qt LCTRL A   &hml LEFT_ALT S  &hml LEFT_GUI D  &kp F     &kp G                                                                                       &kp H   &kp J     &hmr LGUI K  &hmr LEFT_ALT L  &qt LCTRL SEMICOLON  &kp SQT
-&kp LEFT_SHIFT  &kp Z         &kp X            &kp C            &kp V     &kp B   &kp TAB         &lower     &magic 4 0  &kp LS(LEFT_ALT)  &caps_word  &kp ESC        &kp N   &kp M     &kp COMMA    &kp DOT          &kp FSLH             &kp LG(LA(RIGHT))
-&kp LCTRL       &kp LEFT_ALT  &kp HOME         &kp END          &kp LGUI          &kp LEFT_SHIFT  &kp ENTER  &mo 3       &mo 3             &kp SPACE   &kp BACKSPACE          &kp LEFT  &kp DOWN     &kp UP           &kp RIGHT            &kp LG(LA(LEFT))
+&kp LEFT_SHIFT  &kp Z         &kp X            &kp C            &kp V     &kp B   &mo 3           &lower     &magic 4 0  &kp LS(LEFT_ALT)  &caps_word  &kp ESC        &kp N   &kp M     &kp COMMA    &kp DOT          &kp FSLH             &kp LG(LA(RIGHT))
+&kp LCTRL       &kp LEFT_ALT  &kp HOME         &kp END          &kp LGUI          &kp LEFT_SHIFT  &kp ENTER  &kp TAB     &mo 3             &kp SPACE   &kp BACKSPACE          &kp LEFT  &kp DOWN     &kp UP           &kp RIGHT            &kp LG(LA(LEFT))
             >;
         };
 
