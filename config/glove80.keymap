@@ -406,8 +406,8 @@
             bindings = <
 &to 0       &trans        &trans     &trans     &trans                                                                              &trans  &trans  &trans  &trans    &trans
 &trans      &trans        &trans     &trans     &trans        &trans                                                        &trans  &trans  &trans  &trans  &trans    &trans
-&kp TAB     &trans        &kp W      &kp E      &trans        &trans                                                        &trans  &trans  &trans  &trans  &trans    &trans
-&trans      &kp A         &kp S      &kp D      &kp F         &trans                                                        &trans  &kp J   &kp K   &kp L   &kp SEMI  &trans
+&kp TAB     &kp T         &kp Q      &kp W      &kp E         &kp R                                                         &trans  &trans  &trans  &trans  &trans    &trans
+&trans      &kp F         &kp A      &kp S      &kp D         &trans                                                        &trans  &kp J   &kp K   &kp L   &kp SEMI  &trans
 &kp LSHIFT  &trans        &trans     &trans     &trans        &trans  &kp ESC    &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &kp PG_UP
 &kp LCTRL   &kp LEFT_ALT  &kp PG_DN  &kp PG_UP  &kp LEFT_GUI          &kp SPACE  &kp ENTER  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans    &kp PG_DN
             >;
