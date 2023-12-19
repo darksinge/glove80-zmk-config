@@ -382,12 +382,12 @@
 
         layer_Magic {
             bindings = <
-&to 0        &none            &none            &sys_reset       &bt BT_CLR                                                                                &bt BT_CLR_ALL  &none  &none  &none  &sys_reset
-&none        &none            &none            &none            &none            &none                                                             &none  &none           &none  &none  &none  &none
-&none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                   &none  &none           &none  &none  &none  &none
-&none        &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                   &none  &none           &none  &none  &none  &none
-&bootloader  &none            &none            &none            &none            &bootloader      &bt_2  &bt_3  &none         &none  &none  &none  &none  &none           &none  &none  &none  &bootloader
-&none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB  &none  &none  &none         &none           &none  &none  &none  &none
+&to 0        &none            &none            &sys_reset       &bt BT_CLR                                                                                      &bt BT_CLR_ALL  &none  &none  &none  &sys_reset
+&none        &none            &none            &none            &none            &none                                                             &none        &none           &none  &none  &none  &none
+&none        &rgb_ug RGB_SPI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                                                   &none        &none           &none  &none  &none  &none
+&none        &rgb_ug RGB_SPD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF                                                   &none        &none           &none  &none  &none  &none
+&bootloader  &none            &none            &none            &none            &bootloader      &bt_2  &bt_3  &none         &none  &none  &none  &bootloader  &none           &none  &none  &none  &bootloader
+&none        &none            &none            &none            &none                             &bt_0  &bt_1  &out OUT_USB  &none  &none  &none               &none           &none  &none  &none  &none
             >;
         };
 
@@ -398,7 +398,7 @@
 &none   &kp LG(LS(LC(LA(Q))))  &kp LG(LS(LC(LA(W))))  &kp LG(LS(LC(LA(E))))  &kp LG(LS(LC(LA(R))))  &kp LG(LS(LC(LA(T))))                                            &kp LG(LS(LC(LA(Y))))  &kp LG(LS(LC(LA(U))))  &kp LG(LS(LC(LA(I))))  &kp LG(LS(LC(LA(O))))  &kp LG(LS(LC(LA(P))))  &kp F12
 &none   &kp LG(LS(LC(LA(A))))  &kp LG(LS(LC(LA(S))))  &kp LG(LS(LC(LA(D))))  &kp LG(LS(LC(LA(F))))  &kp LG(LS(LC(LA(G))))                                            &kp LG(LS(LC(LA(H))))  &kp LG(LS(LC(LA(J))))  &kp LG(LS(LC(LA(K))))  &kp LG(LS(LC(LA(L))))  &none                  &none
 &none   &kp LG(LS(LC(LA(Z))))  &kp LG(LS(LC(LA(X))))  &kp LG(LS(LC(LA(C))))  &kp LG(LS(LC(LA(V))))  &kp LG(LS(LC(LA(B))))  &none  &none  &none  &none  &none  &none  &kp LG(LS(LC(LA(N))))  &kp LG(LS(LC(LA(M))))  &none                  &none                  &none                  &none
-&none   &none                  &none                  &none                  &none                                         &none  &none  &none  &none  &none  &none                         &none                  &none                  &none                  &none                  &none
+&none   &none                  &none                  &none                  &none                                         &none  &none  &none  &none  &none  &none                         &none                  &none                  &none                  &none                  &to 6
             >;
         };
 
