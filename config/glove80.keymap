@@ -9,11 +9,9 @@
  * This file was generated automatically. You may or may not want to
  * edit it directly.
  */
-
-#include <behaviors.dtsi>
-
 /* Include all behaviour includes needed */
 
+#include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
@@ -259,7 +257,7 @@
         #binding-cells = <0>;
         wait-ms = <30>;
         tap-ms = <40>;
-        bindings = <&kp LS(N4) &kp H &kp LS(V) &kp PERCENT>;
+        bindings = <&kp LS(N4) &kp LS(V) &kp PERCENT &kp LS(N4)>;
     };
 
     macro_tmux_vim: macro_tmux_vim {
