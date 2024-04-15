@@ -233,7 +233,7 @@
                 <&macro_tap>,
                 <&to 0>,
                 <&macro_tap>,
-                <&rgb_ug RGB_COLOR_HSB(230,52,44)>;
+                <&rgb_ug RGB_COLOR_HSB(230,95,23)>;
 
             label = "RGB_LAYER0";
         };
@@ -245,7 +245,7 @@
                 <&macro_tap>,
                 <&to 1>,
                 <&macro_tap>,
-                <&rgb_ug RGB_COLOR_HSB(126,51,42)>;
+                <&rgb_ug RGB_COLOR_HSB(126,100,33)>;
 
             label = "TOG_LAYER1_RGB";
         };
@@ -257,12 +257,12 @@
                 <&macro_press>,
                 <&mo 6>,
                 <&macro_tap>,
-                <&rgb_ug RGB_COLOR_HSB(233,49,54)>,
+                <&rgb_ug RGB_COLOR_HSB(233,99,30)>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&mo 6>,
                 <&macro_tap>,
-                <&rgb_ug RGB_COLOR_HSB(131,47,43)>;
+                <&rgb_ug RGB_COLOR_HSB(131,100,30)>;
 
             label = "RGB_MO_LAYER6";
         };
