@@ -348,7 +348,7 @@
         compatible = "zmk,combos";
 
         toggle_layer1 {
-            bindings = <&to 1>;
+            bindings = <&rgb_tog_layer1>;
             key-positions = <66 67 68>;
             layers = <0>;
             require-prior-idle-ms = <150>;
@@ -369,7 +369,7 @@
         };
 
         to_base {
-            bindings = <&to 0>;
+            bindings = <&rgb_tog_layer0>;
             key-positions = <66 67 68>;
             layers = <1>;
             require-prior-idle-ms = <150>;
