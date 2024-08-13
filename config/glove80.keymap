@@ -421,12 +421,12 @@
 
         layer_Symbols {
             bindings = <
-&to 0       &kp F2           &kp F3            &kp F4      &kp F5                                                                                                        &kp F6     &kp F7            &kp F8            &kp F9        &kp F10
-&trans      &kp C_PREVIOUS   &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                                                             &kp C_MUTE     &trans     &trans            &trans            &trans        &kp F11
-&trans      &macro_tmux_vim  &kp AT_SIGN       &kp LBRC    &kp RBRC           &macro_vimsbb                                                               &kp LS(MINUS)  &kp PLUS   &kp ASTERISK      &kp EXCLAMATION   &trans        &kp F12
-&trans      &kp POUND        &kp DOLLAR        &kp LPAR    &kp RPAR           &kp TAB                                                                     &kp MINUS      &kp EQUAL  &kp GREATER_THAN  &kp PIPE          &kp TILDE     &kp FSLH
-&kp DELETE  &kp PERCENT      &kp CARET         &kp LBKT    &kp RBKT           &kp GRAVE        &trans  &trans  &trans  &macro_codeblock  &trans  &trans   &kp AMPERSAND  &kp COLON  &kp LESS_THAN     &kp GREATER_THAN  &kp QUESTION  &kp PAGE_UP
-&trans      &trans           &trans            &trans      &kp LS(ENTER)                       &trans  &trans  &trans  &kp LS(TAB)       &trans  &kp ESC                 &trans     &trans            &trans            &trans        &kp PG_DN
+&to 0       &kp F2          &kp F3            &kp F4      &kp F5                                                                                                        &kp F6     &kp F7            &kp F8            &kp F9        &kp F10
+&trans      &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                                                             &kp C_MUTE     &trans     &trans            &trans            &trans        &kp F11
+&trans      &kp LA(S)       &kp AT_SIGN       &kp LBRC    &kp RBRC           &macro_vimsbb                                                               &kp LS(MINUS)  &kp PLUS   &kp ASTERISK      &kp EXCLAMATION   &trans        &kp F12
+&trans      &kp POUND       &kp DOLLAR        &kp LPAR    &kp RPAR           &kp TAB                                                                     &kp MINUS      &kp EQUAL  &kp GREATER_THAN  &kp PIPE          &kp TILDE     &kp FSLH
+&kp DELETE  &kp PERCENT     &kp CARET         &kp LBKT    &kp RBKT           &kp GRAVE        &trans  &trans  &trans  &macro_codeblock  &trans  &trans   &kp AMPERSAND  &kp COLON  &kp LESS_THAN     &kp GREATER_THAN  &kp QUESTION  &kp PAGE_UP
+&trans      &trans          &trans            &trans      &kp LS(ENTER)                       &trans  &trans  &trans  &kp LS(TAB)       &trans  &kp ESC                 &trans     &trans            &trans            &trans        &kp PG_DN
             >;
         };
 
