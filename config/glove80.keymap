@@ -392,7 +392,7 @@
 &kp EQUAL       &kp N1        &kp N2            &kp N3             &kp N4             &kp N5                                                                                       &kp N6  &kp N7             &kp N8       &kp N9           &kp N0               &kp MINUS
 &kp TAB         &kp Q         &kp W             &kp E              &kp R              &kp T                                                                                        &kp Y   &kp U              &kp I        &kp O            &kp P                &kp BSLH
 &kp MINUS       &qt LCTRL A   &hml LEFT_ALT S   &hml LEFT_GUI D    &hml LEFT_SHIFT F  &kp G                                                                                        &kp H   &hmr LEFT_SHIFT J  &hmr LGUI K  &hmr LEFT_ALT L  &qt LCTRL SEMICOLON  &kp SQT
-&kp LEFT_SHIFT  &kp Z         &kp X             &kp C              &kp V              &kp B   &kp LEFT_SHIFT  &lower     &magic 5 0       &kp CAPSLOCK  &caps_word  &kp ESCAPE     &kp N   &kp M              &kp COMMA    &kp DOT          &kp FSLH             &kp LG(LA(RIGHT))
+&kp LEFT_SHIFT  &kp Z         &kp X             &kp C              &kp V              &kp B   &kp LEFT_SHIFT  &lower     &magic 4 0       &kp CAPSLOCK  &caps_word  &kp ESCAPE     &kp N   &kp M              &kp COMMA    &kp DOT          &kp FSLH             &kp LG(LA(RIGHT))
 &kp LCTRL       &kp LEFT_ALT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LGUI                   &mo 3           &kp ENTER  &rgb_tog_layer1  &amethyst_td  &kp SPACE   &kp BACKSPACE          &kp LEFT           &kp DOWN     &kp UP           &kp RIGHT            &kp LG(LA(LEFT))
             >;
         };
