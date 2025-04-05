@@ -399,12 +399,12 @@
 
         layer_Lower {
             bindings = <
-&rgb_tog_layer0  &kp F2    &kp F3                    &kp F4            &kp F5                                                                                                                                 &kp F6      &kp F7        &kp F8        &kp F9           &kp F10
-&kp F1           &kp O     &kp C_PREVIOUS            &kp C_PLAY_PAUSE  &kp C_NEXT                 &kp T                                                                                &kp LEFT_PARENTHESIS   &kp KP_NUM  &kp KP_EQUAL  &kp KP_SLASH  &kp KP_MULTIPLY  &kp F11
-&kp D            &kp N     &kp LS(LG(L))             &kp LG(LA(L))     &kp LA(Y)                  &kp LA(X)                                                                            &kp RIGHT_PARENTHESIS  &kp KP_N7   &kp KP_N8     &kp KP_N9     &kp KP_MINUS     &kp F12
-&kp I            &kp A     &kp LS(LG(LEFT_BRACKET))  &kp LG(B)         &kp LS(LG(RIGHT_BRACKET))  &kp LS(BACKSPACE)                                                                    &kp PERCENT            &kp KP_N4   &kp KP_N5     &kp KP_N6     &kp KP_PLUS      &kp K_MUTE
-&kp LG(R)        &kp Z     &kp J                     &kp SPACE         &kp L                      &kp BACKSPACE      &trans     &trans     &trans           &to 2  &trans  &caps_word  &kp COMMA              &kp KP_N1   &kp KP_N2     &kp KP_N3     &kp KP_ENTER     &kp C_VOLUME_UP
-&kp LCTRL        &kp LALT  &kp I                     &kp O             &trans                                        &kp LG(C)  &kp LA(V)  &rgb_tog_layer0  &to 5  &trans  &trans                             &kp KP_N0   &kp KP_N0     &kp KP_DOT    &kp KP_ENTER     &kp C_VOL_DN
+&rgb_tog_layer0  &kp F2    &kp F3                    &kp F4            &kp F5                                                                                                                                      &kp F6      &kp F7        &kp F8        &kp F9           &kp F10
+&kp F1           &kp O     &kp C_PREVIOUS            &kp C_PLAY_PAUSE  &kp C_NEXT                 &kp T                                                                                     &kp LEFT_PARENTHESIS   &kp KP_NUM  &kp KP_EQUAL  &kp KP_SLASH  &kp KP_MULTIPLY  &kp F11
+&kp D            &kp N     &kp LS(LG(L))             &kp LG(LA(L))     &kp LA(Y)                  &kp LA(X)                                                                                 &kp RIGHT_PARENTHESIS  &kp KP_N7   &kp KP_N8     &kp KP_N9     &kp KP_MINUS     &kp F12
+&kp LA(V)        &kp A     &kp LS(LG(LEFT_BRACKET))  &kp LG(B)         &kp LS(LG(RIGHT_BRACKET))  &kp LS(BACKSPACE)                                                                         &kp PERCENT            &kp KP_N4   &kp KP_N5     &kp KP_N6     &kp KP_PLUS      &kp K_MUTE
+&kp LG(R)        &kp Z     &kp J                     &kp SPACE         &kp L                      &kp BACKSPACE      &kp LEFT_SHIFT  &trans     &trans           &to 2  &trans  &caps_word  &kp COMMA              &kp KP_N1   &kp KP_N2     &kp KP_N3     &kp KP_ENTER     &kp C_VOLUME_UP
+&kp LCTRL        &kp LALT  &kp I                     &kp O             &trans                                        &kp LG(C)       &kp ENTER  &rgb_tog_layer0  &to 5  &trans  &trans                             &kp KP_N0   &kp KP_N0     &kp KP_DOT    &kp KP_ENTER     &kp C_VOL_DN
             >;
         };
 
