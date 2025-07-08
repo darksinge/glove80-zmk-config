@@ -15,6 +15,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 /* Automatically generated layer name #define */
@@ -426,7 +427,7 @@
 &trans      &kp LA(S)       &kp AT_SIGN       &kp LBRC    &kp RBRC           &macro_vimsbb                                                               &kp LS(MINUS)  &kp PLUS   &kp ASTERISK      &kp EXCLAMATION   &trans        &kp F12
 &trans      &kp POUND       &kp DOLLAR        &kp LPAR    &kp RPAR           &kp TAB                                                                     &kp MINUS      &kp EQUAL  &kp GREATER_THAN  &kp PIPE          &kp TILDE     &kp FSLH
 &kp DELETE  &kp PERCENT     &kp CARET         &kp LBKT    &kp RBKT           &kp GRAVE        &trans  &trans  &trans  &macro_codeblock  &trans  &trans   &kp AMPERSAND  &kp COLON  &kp LESS_THAN     &kp GREATER_THAN  &kp QUESTION  &kp PAGE_UP
-&trans      &trans          &kp HOME          &kp END     &kp LS(ENTER)                       &trans  &trans  &trans  &kp LS(TAB)       &trans  &kp ESC                 &trans     &trans            &trans            &trans        &kp PG_DN
+&mkp MB1    &mkp MB2        &kp HOME          &kp END     &kp LS(ENTER)                       &trans  &trans  &trans  &kp LS(TAB)       &trans  &kp ESC                 &trans     &trans            &trans            &trans        &kp PG_DN
             >;
         };
 
