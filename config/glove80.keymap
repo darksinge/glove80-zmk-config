@@ -394,7 +394,7 @@
 &kp TAB         &kp Q         &kp W             &kp E              &kp R              &kp T                                                                                        &kp Y   &kp U              &kp I        &kp O            &kp P                &kp BSLH
 &kp MINUS       &qt LCTRL A   &hml LEFT_ALT S   &hml LEFT_GUI D    &hml LEFT_SHIFT F  &kp G                                                                                        &kp H   &hmr LEFT_SHIFT J  &hmr LGUI K  &hmr LEFT_ALT L  &qt LCTRL SEMICOLON  &kp SQT
 &kp LEFT_SHIFT  &kp Z         &kp X             &kp C              &kp V              &kp B   &kp LEFT_SHIFT  &lower     &magic 4 0       &kp CAPSLOCK  &caps_word  &kp ESCAPE     &kp N   &kp M              &kp COMMA    &kp DOT          &kp FSLH             &kp LG(LA(RIGHT))
-&kp LCTRL       &kp LEFT_ALT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LGUI                   &mo 3           &kp ENTER  &rgb_tog_layer1  &amethyst_td  &kp SPACE   &kp BACKSPACE          &kp LEFT           &kp DOWN     &kp UP           &kp RIGHT            &kp LG(LA(LEFT))
+&mo 9           &kp LEFT_ALT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LGUI                   &mo 3           &kp ENTER  &rgb_tog_layer1  &amethyst_td  &kp SPACE   &kp BACKSPACE          &kp LEFT           &kp DOWN     &kp UP           &kp RIGHT            &kp LG(LA(LEFT))
             >;
         };
 
@@ -487,6 +487,17 @@
 &kp LS(POUND)  &kp LS(CARET)   &kp MINUS             &kp LS(UNDER)          &kp LS(DLLR)     &kp LS(STAR)                                                         &kp DOT   &kp BSPC        &kp TAB      &kp SPACE     &kp RET       &trans
 &kp LS(TILDE)  &kp LS(LT)      &kp LS(PIPE)          &kp EQUAL              &kp LS(GT)       &kp FSLH      &trans  &trans  &trans  &kp BSLH       &trans  &trans  &kp FSLH  &kp DEL         &kp LS(TAB)  &trans        &trans        &trans
 &kp LS(AT)     &kp LS(AMPS)    &kp LBKT              &kp RBKT               &kp LS(PLUS)                   &trans  &trans  &trans  &kp LS(PRCNT)  &trans  &trans            &kp LS(LPAR)    &kp LBKT     &kp RBKT      &kp LS(RPAR)  &trans
+            >;
+        };
+
+        layer_Pointer {
+            bindings = <
+&trans  &trans     &trans        &trans          &trans                                                                                              &trans          &trans        &trans           &trans  &trans
+&trans  &trans     &trans        &trans          &trans            &trans                                                            &trans          &trans          &trans        &trans           &trans  &trans
+&trans  &trans     &trans        &trans          &trans            &trans                                                            &trans          &trans          &trans        &trans           &trans  &trans
+&trans  &trans     &trans        &trans          &trans            &trans                                                            &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans  &trans
+&trans  &trans     &trans        &trans          &trans            &trans  &trans    &trans    &trans    &none     &trans    &trans  &trans          &trans          &trans        &trans           &trans  &trans
+&trans  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp LEFT_COMMAND          &mkp MB1  &mkp MB2  &mkp MB3  &mkp MB5  &mkp MB4  &trans                  &trans          &trans        &trans           &trans  &trans
             >;
         };
     };
